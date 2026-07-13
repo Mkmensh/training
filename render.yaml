@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: starter-app-mkmensh
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /hello
+    envVars:
+      - key: PORT
+        value: "10000"
